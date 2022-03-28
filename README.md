@@ -10,8 +10,8 @@ For now there's no async I/O so clicking buttons will have some visible delay
 Clicking <kbd>R</kbd> restarts the algorithm only when paused<br>
 Clicking <kbd>R</kbd> when algorithm is reseted clears the grid<br>
 Clicking <kbd>SPACE</kbd> pauses the algorithm<br>
-<kbd>Left Click</kbd> adds (start, end 🟥, wall ⬛) in this order if you delete start it will firstly create a start node<br>
-<kbd>Right Click</kbd> deletes stuff ⬜<br>
+<kbd>Left Click</kbd> adds (start, end, wall) in this order if you delete start it will firstly create a start node<br>
+<kbd>Right Click</kbd> deletes stuff <br>
 **Drawing is enabled only when the algorithm has ended<br>
 When there is no solution algorithm restarts**
 
