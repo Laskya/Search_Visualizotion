@@ -3,8 +3,8 @@ Did you ever wonder what would A* and other path finding algortihms look on a sq
 If yes that's good<br>
 If no that's still good<br>
 
-For now there's no async I/O so clicking buttons will have some visible delay
-> I'll fix that sometime
+For now there's no async I/O so clicking buttons will have some visible delay and only one algorithm A*
+> I'll fix that sometime and some more algorithms
 
 ## Tutorial
 Clicking <kbd>R</kbd> restarts the algorithm only when paused<br>
