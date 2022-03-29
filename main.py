@@ -13,7 +13,7 @@ SIZE = 1280  # for later use
 GRID_SIZE = SIZE - 200
 CELL_WIDTH = 30
 CELLS = GRID_SIZE // CELL_WIDTH
-REAL_GRID_SIZE = GRID_SIZE + CELLS
+REAL_GRID_SIZE = CELLS * CELL_WIDTH + CELLS
 WINDOW = pygame.display.set_mode((REAL_GRID_SIZE, REAL_GRID_SIZE))
 
 SLEEP = 0.1  # seconds to wait between steps
@@ -36,12 +36,12 @@ class Cell:
         self.g = float('inf')
         self.h = 0
         self.f = float('inf')
-        self.neighbors = []
 
     def get_coord(self):
         return self.row, self.column
 
     def get_neighbors(self, grid):
+        self.neighbors = []
         if self.row > 0 and grid[self.row - 1][self.column].color != WALL:
             self.neighbors.append(grid[self.row - 1][self.column])
 
